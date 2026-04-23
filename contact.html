@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Contact Us | Xtra Flavor Recipes</title>
+    <meta name="description" content="Get in touch with the Xtra Flavor team. Send us your culinary questions, recipe ideas, or feedback. We love hearing from fellow flavor explorers.">
+    <meta name="keywords" content="contact Xtra Flavor, recipe support, culinary feedback, brown theme contact">
+    <meta name="author" content="Xtra Flavor Kitchen">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #2c1a0e; /* deep brown base */
+            font-family: 'Segoe UI', 'Merriweather', Georgia, 'Times New Roman', serif;
+            color: #f7f2e0;
+            line-height: 1.5;
+        }
+
+        :root {
+            --deep-bark: #3b2a1f;
+            --warm-clay: #8b5a2b;
+            --caramel: #c97e3a;
+            --cream: #f9e7c2;
+            --espresso: #2c1a0e;
+            --hazelnut: #a5693a;
+        }
+
+        /* header & nav */
+        .header {
+            background: linear-gradient(135deg, #2a1c0f, #4a2e1a);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid #d6a15a;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            color: #ffdd99;
+            text-shadow: 3px 3px 0 #5a3a22;
+            word-break: keep-all;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #eeddbb;
+            margin-top: 0.5rem;
+        }
+
+        .nav-bar {
+            background: #5d3a1e;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0.8rem 2rem;
+            border-bottom: 2px solid #cb9e6b;
+        }
+
+        .nav-bar a {
+            color: #fff0cf;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            padding: 0.3rem 0.6rem;
+            border-radius: 30px;
+        }
+
+        .nav-bar a:hover {
+            background: #f3bc6c;
+            color: #2c1a0e;
+            transform: scale(1.02);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* contact main layout */
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-form-box {
+            flex: 2;
+            min-width: 280px;
+            background: #3f2c1b;
+            border-radius: 48px;
+            padding: 2rem;
+            border: 1px solid #b87c44;
+            box-shadow: 0 12px 22px rgba(0,0,0,0.4);
+        }
+
+        .contact-info-box {
+            flex: 1.2;
+            min-width: 260px;
+            background: #2f2419;
+            border-radius: 48px;
+            padding: 2rem;
+            border-left: 8px solid #e2a14f;
+            box-shadow: 0 12px 22px rgba(0,0,0,0.4);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #ffd6a5;
+            letter-spacing: 0.3px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            background: #2c1f12;
+            border: 1px solid #c88e4a;
+            border-radius: 32px;
+            font-family: inherit;
+            font-size: 1rem;
+            color: #faf0db;
+            transition: all 0.2s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #f3bc6c;
+            box-shadow: 0 0 0 3px rgba(243, 188, 108, 0.3);
+            background: #3a2a1c;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .btn-submit {
+            background: #d69547;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #2c1a0e;
+            cursor: pointer;
+            transition: 0.2s;
+            width: 100%;
+            font-family: inherit;
+            margin-top: 0.5rem;
+        }
+
+        .btn-submit:hover {
+            background: #f5b15a;
+            transform: scale(0.98);
+        }
+
+        .success-message {
+            background: #4d6b3c;
+            padding: 1rem;
+            border-radius: 60px;
+            margin-top: 1rem;
+            text-align: center;
+            color: #f9efcf;
+            font-weight: bold;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-box h3 {
+            color: #ffd58c;
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #e2a14f;
+            padding-left: 1rem;
+        }
+
+        .contact-detail {
+            margin: 1.8rem 0;
+        }
+
+        .contact-detail p {
+            margin: 0.3rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-detail strong {
+            color: #f3bc6c;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            background: #5d3e24;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            color: #ffefcf;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-link:hover {
+            background: #d69547;
+            color: #2c1a0e;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #c2823a;
+            padding: 0.3rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c1a0e;
+        }
+
+        .faq-preview {
+            margin-top: 2rem;
+            background: #332415;
+            border-radius: 40px;
+            padding: 1.5rem;
+        }
+
+        .faq-preview h4 {
+            color: #ffd6a5;
+            margin-bottom: 0.8rem;
+        }
+
+        .footer {
+            background: #1f1308;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-top: 4px solid #b2722a;
+            margin-top: 3rem;
+            color: #e6d5b8;
+        }
+
+        .footer .address, .footer .contact {
+            margin: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        .footer a {
+            color: #fbcb7b;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border-color: #b5773c;
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 700px) {
+            .header h1 { font-size: 2rem; }
+            .contact-wrapper { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>🌾 Xtra Flavor Recipes 🌿</h1>
+    <p>Earthy. Bold. Unforgettable. — A Brown-Themed Culinary Anthology</p>
+</header>
+
+<nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms Of Privacy</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="cookies.html">Cookies Policy</a>
+</nav>
+
+<div class="container">
+    <div style="text-align: center; margin-bottom: 1rem;">
+        <span class="badge">📞 Let's talk flavor</span>
+        <span class="badge">🍂 24h response</span>
+        <span class="badge">🌎 Global kitchen family</span>
+    </div>
+    <h2 style="color: #ffdd99; font-size: 2rem; text-align: center; margin-bottom: 0.5rem;">Get in Touch</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 1.8rem auto;">Have a question about a recipe? Want to share your own brown‑butter masterpiece? Or just say hi — we’re all ears. Fill out the form or reach out directly. Your culinary voice matters.</p>
+
+    <div class="contact-wrapper">
+        <!-- Contact Form Column -->
+        <div class="contact-form-box">
+            <h3 style="color: #f5cf97; margin-bottom: 1.5rem; font-size: 1.8rem;">✍️ Send us a Message</h3>
+            <form id="flavorContactForm">
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="e.g., Maya Rodriguez">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="hello@flavorlover.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="recipe-inquiry">🍲 Recipe Inquiry</option>
+                        <option value="collaboration">🤝 Collaboration / Press</option>
+                        <option value="feedback">💬 Feedback & Suggestions</option>
+                        <option value="support">🛠 Technical Support</option>
+                        <option value="other">✨ Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your favorite brown-themed dish, ask about ingredient swaps, or share your Xtra Flavor experience..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">🌰 Send Flavor Note →</button>
+                <div id="formFeedback" style="margin-top: 1rem;"></div>
+            </form>
+            <p style="font-size: 0.8rem; margin-top: 1.2rem; color: #dbbc91;">⭐ We typically reply within 24 hours (except weekends). Your data stays confidential — see our <a href="privacy.html" style="color:#f3bc6c;">Privacy Policy</a>.</p>
+        </div>
+
+        <!-- Contact info & social column -->
+        <div class="contact-info-box">
+            <div class="info-icon">🍂📮</div>
+            <h3>Xtra Flavor Kitchen</h3>
+            <div class="contact-detail">
+                <p><strong>📍 Visit Us (by appointment)</strong><br>142 Brownstone Lane, Culinary District, Suite 3B, Asheville, NC 28801</p>
+                <p><strong>📞 Phone / Support</strong><br><a href="tel:+18285551234" style="color:#fbcb7b;">+1 (828) 555-1234</a> (Mon–Fri, 9am–5pm EST)</p>
+                <p><strong>✉️ Email</strong><br><a href="mailto:hello@xtraflavorrecipes.com" style="color:#fbcb7b;">hello@xtraflavorrecipes.com</a><br><a href="mailto:chef@xtraflavorrecipes.com" style="color:#fbcb7b;">chef@xtraflavorrecipes.com</a> (for culinary collabs)</p>
+            </div>
+            <hr>
+            <div class="social-links">
+                <a href="#" class="social-link">📘 Facebook</a>
+                <a href="#" class="social-link">📸 Instagram</a>
+                <a href="#" class="social-link">🐦 X (Twitter)</a>
+                <a href="#" class="social-link">🍴 Pinterest</a>
+            </div>
+            <div class="faq-preview">
+                <h4>🍁 Quick answers</h4>
+                <p><strong>🔹 Recipe substitutions?</strong> We love creativity — email us for custom swaps.<br>
+                <strong>🔹 Can I submit my own recipe?</strong> Yes! Use the form with subject "Feedback & Suggestions".<br>
+                <strong>🔹 Wholesale / licensing?</strong> Contact our partnerships team at <a href="mailto:chef@xtraflavorrecipes.com" style="color:#fbcb7b;">chef@...</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- extra flavorful location map simulation + extended reach -->
+    <div style="background: #2c1f12; border-radius: 40px; padding: 1.5rem; margin-top: 2rem; text-align: center;">
+        <h3 style="color: #f5cf97;">🌍 Brown Theme Community & Events</h3>
+        <p>Join our seasonal cooking workshops (online & in Asheville) — “Caramelization Masterclass”, “Art of Chocolate Tasting”, “Ancient Grains Revival”. Sign up for our newsletter via contact form or drop a line. We love hosting pop-up dinners that celebrate earthy, rich flavors.</p>
+        <p style="margin-top: 1rem;"><span class="badge">Next event: Nov 15 — Brown Butter Bash</span> <span class="badge">Free recipe zine for visitors</span></p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="address">
+        📍 <strong>Xtra Flavor Headquarters</strong><br>
+        142 Brownstone Lane, Culinary District, Suite 3B,<br>
+        Asheville, NC 28801, United States
+    </div>
+    <div class="contact">
+        📞 <strong>Reservations & Support:</strong> <a href="tel:+18285551234">+1 (828) 555-1234</a><br>
+        ✉️ <a href="mailto:hello@xtraflavorrecipes.com">hello@xtraflavorrecipes.com</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.85rem;">
+        © 2026 Xtra Flavor Recipes — All content, recipes, and photography are uniquely crafted. Brown theme forever.
+    </div>
+</footer>
+
+<script>
+    // Simulated contact form handler (no actual server, but shows success with style)
+    const contactForm = document.getElementById('flavorContactForm');
+    const feedbackDiv = document.getElementById('formFeedback');
+
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // simple validation
+        const fullname = document.getElementById('fullname').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!fullname || !email || !message) {
+            feedbackDiv.innerHTML = '<div class="success-message" style="background:#a13e2d;">❌ Please fill in all required fields (Name, Email, Message).</div>';
+            return;
+        }
+        if (!email.includes('@') || !email.includes('.')) {
+            feedbackDiv.innerHTML = '<div class="success-message" style="background:#a13e2d;">📧 Please enter a valid email address.</div>';
+            return;
+        }
+
+        // simulate successful submission — show gratitude message and reset optional
+        feedbackDiv.innerHTML = '<div class="success-message">✨ Thank you, ' + escapeHtml(fullname) + '! Your flavor note has been whisked to our kitchen. We\'ll get back to you soon. 🍂</div>';
+        contactForm.reset();
+        
+        // optional: clear success message after 6 seconds
+        setTimeout(() => {
+            if(feedbackDiv.firstChild) {
+                feedbackDiv.innerHTML = '';
+            }
+        }, 6000);
+    });
+
+    // simple XSS prevention helper
+    function escapeHtml(str) {
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
+            return c;
+        });
+    }
+
+    // additional interactive map simulation: just for show (console greeting)
+    console.log("Xtra Flavor Contact Page — ready to receive your culinary messages.");
+</script>
+
+</body>
+</html>
