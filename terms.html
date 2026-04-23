@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Terms of Service | Xtra Flavor Recipes</title>
+    <meta name="description" content="Review the Terms of Service for Xtra Flavor Recipes. Understand your rights, responsibilities, and our guidelines for using our brown-themed culinary platform.">
+    <meta name="keywords" content="terms of service, Xtra Flavor, legal, user agreement, culinary terms">
+    <meta name="author" content="Xtra Flavor Kitchen">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #2c1a0e; /* deep brown base */
+            font-family: 'Segoe UI', 'Merriweather', Georgia, 'Times New Roman', serif;
+            color: #f7f2e0;
+            line-height: 1.5;
+        }
+
+        :root {
+            --deep-bark: #3b2a1f;
+            --warm-clay: #8b5a2b;
+            --caramel: #c97e3a;
+            --cream: #f9e7c2;
+            --espresso: #2c1a0e;
+            --hazelnut: #a5693a;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2a1c0f, #4a2e1a);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid #d6a15a;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            color: #ffdd99;
+            text-shadow: 3px 3px 0 #5a3a22;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #eeddbb;
+            margin-top: 0.5rem;
+        }
+
+        .nav-bar {
+            background: #5d3a1e;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0.8rem 2rem;
+            border-bottom: 2px solid #cb9e6b;
+        }
+
+        .nav-bar a {
+            color: #fff0cf;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            padding: 0.3rem 0.6rem;
+            border-radius: 30px;
+        }
+
+        .nav-bar a:hover {
+            background: #f3bc6c;
+            color: #2c1a0e;
+            transform: scale(1.02);
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* terms hero section */
+        .terms-hero {
+            background: linear-gradient(112deg, #3a281b, #251a0f);
+            border-radius: 56px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid #c2894b;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+        }
+
+        .terms-hero h2 {
+            font-size: 2.5rem;
+            color: #fad488;
+            border-left: 6px solid #e2a14f;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .terms-hero p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .legal-card {
+            background: #3f2c1b;
+            border-radius: 40px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #b87c44;
+            transition: transform 0.2s;
+        }
+
+        .legal-card h3 {
+            font-size: 1.8rem;
+            color: #ffd6a5;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 2px dotted #c2894b;
+            padding-bottom: 0.5rem;
+        }
+
+        .legal-card p, .legal-card li {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .legal-card ul, .legal-card ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #c2823a;
+            padding: 0.3rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c1a0e;
+        }
+
+        .highlight {
+            background: #5a3c22;
+            padding: 0.1rem 0.3rem;
+            border-radius: 12px;
+            color: #ffefc0;
+        }
+
+        .footer {
+            background: #1f1308;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-top: 4px solid #b2722a;
+            margin-top: 3rem;
+            color: #e6d5b8;
+        }
+
+        .footer .address, .footer .contact {
+            margin: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        .footer a {
+            color: #fbcb7b;
+            text-decoration: none;
+        }
+
+        .btn {
+            background: #d69547;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 60px;
+            font-weight: bold;
+            color: #2c1a0e;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #f5b15a;
+            transform: scale(0.98);
+        }
+
+        .update-banner {
+            background: #332415;
+            border-radius: 30px;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-left: 6px solid #e7b15a;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 650px) {
+            .header h1 { font-size: 2rem; }
+            .terms-hero h2 { font-size: 1.8rem; }
+            .legal-card h3 { font-size: 1.4rem; }
+            .legal-card ul, .legal-card ol { margin-left: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>🌾 Xtra Flavor Recipes 🌿</h1>
+    <p>Earthy. Bold. Unforgettable. — A Brown-Themed Culinary Anthology</p>
+</header>
+
+<nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms Of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="cookies.html">Cookies Policy</a>
+</nav>
+
+<div class="container">
+    <!-- Terms Intro Section -->
+    <div class="terms-hero">
+        <h2>📜 Terms of Service</h2>
+        <p>Welcome to <strong>Xtra Flavor Recipes</strong>. By accessing or using our website (the "Site"), you agree to comply with and be bound by the following Terms of Service. Please read them carefully. These terms govern your use of all content, recipes, articles, and interactive features on Xtra Flavor Recipes. If you do not agree with any part of these terms, you must not use our Site.</p>
+        <p>Our culinary world is built on trust, respect, and shared love for deep, earthy flavors. These terms are designed to protect both you and our creative community. Last updated: <strong>April 22, 2026</strong>.</p>
+        <a href="#acceptance" class="btn" style="margin-top: 0.5rem;">📖 Jump to Key Sections</a>
+    </div>
+
+    <!-- Update notification -->
+    <div class="update-banner">
+        📢 <strong>Notice of updates:</strong> We may revise these Terms from time to time. The latest version will always be posted here with an updated “Last Revised” date. Your continued use of the Site after changes constitutes acceptance.
+    </div>
+
+    <!-- Main Terms sections using cards -->
+    <div class="legal-card" id="acceptance">
+        <h3>✅ 1. Acceptance of Terms</h3>
+        <p>By visiting Xtra Flavor Recipes, you acknowledge that you have read, understood, and agree to be bound by these Terms, our <a href="privacy.html" style="color:#f5b15a;">Privacy Policy</a>, and <a href="cookies.html" style="color:#f5b15a;">Cookies Policy</a>. If you are using the Site on behalf of an organization, you represent that you have authority to bind that entity. These Terms apply to all users, including visitors, registered members, and contributors.</p>
+        <p>We reserve the right to refuse access to any person for any reason at any time.</p>
+    </div>
+
+    <div class="legal-card">
+        <h3>🍲 2. Use of Content & Intellectual Property</h3>
+        <p>All content on Xtra Flavor Recipes — including but not limited to recipes, text, photographs, graphics, logos, videos, audio clips, digital downloads, data compilations, and "brown-themed" original artwork — is the property of Xtra Flavor Recipes or its content suppliers and is protected by international copyright, trademark, and other intellectual property laws.</p>
+        <ul>
+            <li><span class="highlight">Personal, Non-Commercial Use:</span> You may access, print, and download recipes for personal cooking inspiration, provided you do not modify or remove any copyright or proprietary notices.</li>
+            <li><span class="highlight">Prohibited Uses:</span> You may not republish, redistribute, sell, license, or exploit any content for commercial purposes without explicit written permission from Xtra Flavor Recipes. This includes reproducing recipes on another website, in cookbooks for sale, or using our photos for product packaging.</li>
+            <li><span class="highlight">Attribution:</span> If you share our content on social media or personal blogs, you must provide clear credit to “Xtra Flavor Recipes” with a direct link to the original recipe or article. No derivative works that misrepresent the original recipe are allowed.</li>
+        </ul>
+        <p>For permissions or licensing requests, please contact us at <a href="mailto:legal@xtraflavorrecipes.com" style="color:#f5b15a;">legal@xtraflavorrecipes.com</a>.</p>
+        <div><span class="badge">© All Rights Reserved</span><span class="badge">Recipes Protected</span></div>
+    </div>
+
+    <div class="legal-card">
+        <h3>👩‍🍳 3. User Contributions & Community Guidelines</h3>
+        <p>We love hearing from our flavor community! You may have the opportunity to post comments, recipe reviews, photos of your creations, or other content (“User Contributions”) on certain areas of the Site. By submitting User Contributions, you grant Xtra Flavor Recipes a perpetual, royalty-free, worldwide license to use, modify, display, and distribute that content in any media, for any purpose related to our brand (including promotional materials).</p>
+        <p><strong>You represent and warrant that:</strong> your contributions are original, do not infringe any third-party rights, and are not defamatory, obscene, harassing, or otherwise unlawful. We reserve the right to remove or edit any User Contributions at our sole discretion, without notice.</p>
+        <p><strong>Prohibited conduct:</strong> Spam, promotional links, hate speech, impersonation, or any attempt to disrupt the Site’s functionality. Violations may lead to a permanent ban.</p>
+        <p><span class="badge">Be Kind</span><span class="badge">Respect Flavors</span><span class="badge">No Plagiarism</span></p>
+    </div>
+
+    <div class="legal-card">
+        <h3>⚖️ 4. Disclaimer of Warranties</h3>
+        <p>All recipes, techniques, and nutritional information provided on Xtra Flavor Recipes are for general informational and entertainment purposes only. While we strive for accuracy, we make no representations or warranties of any kind, express or implied, about the completeness, reliability, suitability, or availability of the information, products, services, or related graphics contained on the Site for any purpose.</p>
+        <p>Cooking involves inherent risks such as burns, cuts, food allergies, and kitchen accidents. You assume full responsibility for any outcomes resulting from following our recipes. We strongly recommend that you follow proper food safety guidelines and consult a medical professional regarding dietary restrictions or allergies. Xtra Flavor Recipes shall not be liable for any adverse reactions, injuries, or damages arising from the use of our content.</p>
+        <p><strong>Nutritional calculations</strong> are estimates and should not replace professional dietary advice. Ingredients may vary in nutritional value.</p>
+        <div><span class="badge">Use at your own risk</span><span class="badge">Test kitchen but your kitchen</span></div>
+    </div>
+
+    <div class="legal-card">
+        <h3>🔗 5. Third-Party Links & Affiliate Disclosure</h3>
+        <p>Our Site may contain links to external websites (e.g., ingredient suppliers, cookware brands) that are not operated by us. We have no control over the content, privacy policies, or practices of any third-party sites and assume no responsibility for them. Inclusion of any link does not imply endorsement.</p>
+        <p>Xtra Flavor Recipes participates in select affiliate marketing programs, which means we may earn a small commission when you purchase products through certain links, at no extra cost to you. We only promote items we genuinely love and believe align with our brown-themed culinary philosophy. Our affiliate relationships never influence the integrity of our recipes or recommendations. For transparency, any affiliate links will be clearly marked where required by law.</p>
+    </div>
+
+    <div class="legal-card">
+        <h3>⛔ 6. Limitation of Liability</h3>
+        <p>To the fullest extent permitted by law, Xtra Flavor Recipes, its owners, employees, or affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your use or inability to use the Site; (ii) any errors or omissions in any content; (iii) personal injury or property damage arising from your use of recipes; or (iv) any unauthorized access to or use of our servers.</p>
+        <p>In jurisdictions that do not allow the exclusion of certain warranties or limitation of liability, our liability shall be limited to the maximum extent permitted by law.</p>
+    </div>
+
+    <div class="legal-card">
+        <h3>🧑‍🤝‍🧑 7. Indemnification</h3>
+        <p>You agree to indemnify, defend, and hold harmless Xtra Flavor Recipes and its affiliates from any claim, demand, damages, or expenses (including reasonable attorneys’ fees) arising out of your breach of these Terms, your misuse of the Site, or your violation of any law or the rights of a third party.</p>
+    </div>
+
+    <div class="legal-card">
+        <h3>📆 8. Termination & Suspension</h3>
+        <p>We reserve the right to suspend or terminate your access to all or part of the Site at any time, with or without cause, with or without notice, effective immediately. If you violate any term, your permission to use the Site automatically terminates. Upon termination, your right to use the Site ceases immediately, but sections regarding intellectual property, indemnification, and limitation of liability shall survive.</p>
+    </div>
+
+    <div class="legal-card">
+        <h3>🌍 9. Governing Law & Dispute Resolution</h3>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the State of North Carolina, without regard to its conflict of law provisions. Any dispute arising from or relating to these Terms or your use of the Site shall be resolved exclusively through binding arbitration in Buncombe County, North Carolina, except that either party may seek injunctive relief in a court of competent jurisdiction to protect intellectual property rights.</p>
+        <p>You agree to first contact us directly at <a href="mailto:legal@xtraflavorrecipes.com" style="color:#f5b15a;">legal@xtraflavorrecipes.com</a> to resolve any dispute informally before initiating arbitration. Class action waivers apply: all disputes must be brought on an individual basis.</p>
+    </div>
+
+    <div class="legal-card">
+        <h3>🧒 10. Age Restriction & User Responsibility</h3>
+        <p>Our Site is intended for users who are at least 13 years of age. If you are under 18, you represent that you have parental or guardian consent to use the Site. Xtra Flavor Recipes does not knowingly collect personal information from children under 13. Please review our Privacy Policy for details.</p>
+        <p>You are responsible for maintaining the confidentiality of any account credentials and for all activities that occur under your account. Notify us immediately of any unauthorized use.</p>
+    </div>
+
+    <div class="legal-card">
+        <h3>🍪 11. Entire Agreement & Severability</h3>
+        <p>These Terms, together with our Privacy Policy and Cookies Policy, constitute the entire agreement between you and Xtra Flavor Recipes regarding the use of the Site. If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+    </div>
+
+    <!-- Extra contact / Acknowledgment block -->
+    <div class="terms-hero" style="background: #2e231a; margin-top: 1rem;">
+        <h2>📬 Questions? We're Here.</h2>
+        <p>If you have any questions about these Terms of Service, please reach out to our legal team. We believe in transparency and fair treatment — the same care we put into browning butter and slow-simmered stews goes into our legal commitments.</p>
+        <p><strong>Xtra Flavor Recipes Legal Department</strong><br>
+        📧 <a href="mailto:legal@xtraflavorrecipes.com" style="color:#f5b15a;">legal@xtraflavorrecipes.com</a><br>
+        📞 +1 (828) 555-1234 (ask for Legal)<br>
+        📍 142 Brownstone Lane, Culinary District, Asheville, NC 28801, United States</p>
+        <p><em>By continuing to explore our brown-themed culinary universe, you acknowledge that you have read, understood, and agree to be bound by these Terms.</em></p>
+        <div style="margin-top: 1rem;">
+            <a href="privacy.html" class="btn">🔒 Privacy Policy</a>
+            <a href="cookies.html" class="btn" style="background: #8b5a2b; margin-left: 0.5rem;">🍪 Cookies Policy</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" id="footerAddress">
+    <div class="address">
+        📍 <strong>Xtra Flavor Headquarters</strong><br>
+        142 Brownstone Lane, Culinary District, Suite 3B,<br>
+        Asheville, NC 28801, United States
+    </div>
+    <div class="contact">
+        📞 <strong>Support & Legal Inquiries:</strong> <a href="tel:+18285551234">+1 (828) 555-1234</a><br>
+        ✉️ <a href="mailto:hello@xtraflavorrecipes.com">hello@xtraflavorrecipes.com</a> | <a href="mailto:legal@xtraflavorrecipes.com">legal@xtraflavorrecipes.com</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.85rem;">
+        © 2026 Xtra Flavor Recipes — All content, recipes, photography, and brown-themed assets are protected under intellectual property laws. Terms of Service apply.
+    </div>
+</footer>
+
+<script>
+    // Smooth scroll for anchor links inside legal cards (if any)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1);
+            const target = document.getElementById(targetId);
+            if(target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    console.log("Xtra Flavor Terms of Service — full legal compliance with warm brown aesthetics.");
+</script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Cookies Policy | Xtra Flavor Recipes</title>
+    <meta name="description" content="Cookie Policy for Xtra Flavor Recipes — learn about the cookies we use, how we respect your privacy, and how to manage your preferences.">
+    <meta name="robots" content="index, follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #2c1a0e;
+            font-family: 'Segoe UI', 'Merriweather', Georgia, 'Times New Roman', serif;
+            color: #f7f2e0;
+            line-height: 1.55;
+        }
+
+        :root {
+            --deep-bark: #3b2a1f;
+            --warm-clay: #8b5a2b;
+            --caramel: #c97e3a;
+            --cream: #f9e7c2;
+            --espresso: #2c1a0e;
+            --hazelnut: #a5693a;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2a1c0f, #4a2e1a);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid #d6a15a;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        }
+
+        .header h1 {
+            font-size: 2.7rem;
+            letter-spacing: 2px;
+            color: #ffdd99;
+            text-shadow: 3px 3px 0 #5a3a22;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #eeddbb;
+            margin-top: 0.5rem;
+        }
+
+        .nav-bar {
+            background: #5d3a1e;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0.8rem 2rem;
+            border-bottom: 2px solid #cb9e6b;
+        }
+
+        .nav-bar a {
+            color: #fff0cf;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            padding: 0.3rem 0.6rem;
+            border-radius: 30px;
+        }
+
+        .nav-bar a:hover {
+            background: #f3bc6c;
+            color: #2c1a0e;
+            transform: scale(1.02);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 2.5rem auto;
+            padding: 0 1.8rem;
+        }
+
+        .cookies-card {
+            background: #3f2c1b;
+            border-radius: 48px;
+            padding: 2.2rem 2.5rem;
+            border: 1px solid #b87c44;
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.5);
+        }
+
+        .cookies-card h2 {
+            color: #ffdba5;
+            font-size: 2rem;
+            border-left: 6px solid #e2a14f;
+            padding-left: 1.2rem;
+            margin: 1.2rem 0 1rem 0;
+        }
+
+        .cookies-card h3 {
+            color: #f5cf97;
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.8rem 0;
+            font-weight: 600;
+        }
+
+        .cookies-card p {
+            margin-bottom: 1rem;
+            color: #f2e5d2;
+        }
+
+        .cookies-card ul, .cookies-card ol {
+            margin: 0.8rem 0 1.2rem 2rem;
+            color: #f2e5d2;
+        }
+
+        .cookies-card li {
+            margin: 0.5rem 0;
+        }
+
+        .cookies-card a {
+            color: #fbcb7b;
+            text-decoration: none;
+            border-bottom: 1px dotted #d69b4a;
+        }
+
+        .cookies-card a:hover {
+            color: #ffeaac;
+            border-bottom-color: #ffcf8a;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background: #c2823a;
+            padding: 0.3rem 1rem;
+            border-radius: 60px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #2c1a0e;
+            letter-spacing: 0.3px;
+        }
+
+        .effective-date {
+            background: #2c1f12;
+            padding: 0.7rem 1.2rem;
+            border-radius: 60px;
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            font-size: 0.9rem;
+            color: #efdba8;
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #4a3522;
+            border-radius: 24px;
+            overflow: hidden;
+            margin: 1.2rem 0 1.8rem;
+            font-size: 0.9rem;
+        }
+
+        .cookie-table th, .cookie-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #b87c44;
+        }
+
+        .cookie-table th {
+            background: #5e4029;
+            color: #ffefcf;
+            font-weight: 700;
+        }
+
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cookie-table td {
+            background: #3f2c1b;
+            color: #f2e2cc;
+        }
+
+        .highlight {
+            background: #4f351f;
+            padding: 0.2rem 0.4rem;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .manage-btn {
+            display: inline-block;
+            background: #c2823a;
+            color: #2c1a0e;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 0.5rem;
+            margin-right: 1rem;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.9rem;
+        }
+
+        .manage-btn:hover {
+            background: #e2a14f;
+            transform: scale(1.02);
+        }
+
+        .consent-panel {
+            background: #2c1f12;
+            border-radius: 32px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-left: 5px solid #e2a14f;
+        }
+
+        .footer {
+            background: #1f1308;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-top: 4px solid #b2722a;
+            margin-top: 3rem;
+            color: #e6d5b8;
+        }
+
+        .footer .address, .footer .contact {
+            margin: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        .footer a {
+            color: #fbcb7b;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border-color: #b5773c;
+            margin: 1.8rem 0;
+        }
+
+        @media (max-width: 700px) {
+            .header h1 { font-size: 1.9rem; }
+            .cookies-card { padding: 1.5rem; }
+            .cookies-card h2 { font-size: 1.6rem; }
+            .cookie-table th, .cookie-table td { padding: 8px 10px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>🍪 Xtra Flavor Recipes 🧂</h1>
+    <p>Cookies with integrity — crisp on the outside, transparent inside.</p>
+</header>
+
+<nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms Of Privacy</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="cookies.html">Cookies Policy</a>
+</nav>
+
+<div class="container">
+    <div class="cookies-card">
+        <div class="badge-row">
+            <span class="badge">🍪 First & Third Party</span>
+            <span class="badge">⚙️ Preference management</span>
+            <span class="badge">📊 Analytics</span>
+            <span class="badge">🔐 Essential only</span>
+        </div>
+        <div class="effective-date">
+            📅 Effective: April 22, 2026 | Last updated: April 22, 2026
+        </div>
+        <h1 style="color: #ffdd99; font-size: 2.4rem; margin-bottom: 0.5rem;">Cookie Policy</h1>
+        <p style="font-size: 1.05rem; margin-bottom: 1.8rem;">Like a well-balanced spice blend, cookies help us deliver a smooth, personalized experience on <strong>xtraflavorrecipes.com</strong>. This Cookie Policy explains what cookies are, how we use them, and how you can control your preferences. By continuing to browse our earthy recipe haven, you agree to our use of cookies as described, except where you’ve configured your browser or our preference tool to reject them.</p>
+
+        <h2>📖 1. What Are Cookies?</h2>
+        <p>Cookies are small text files stored on your device (computer, tablet, or mobile) when you visit a website. They help websites recognize your device, remember your actions or preferences over time, and improve overall functionality. Cookies can be “session cookies” (deleted when you close your browser) or “persistent cookies” (remain until they expire or you delete them). We also use similar tracking technologies like localStorage and pixels, all covered under this policy.</p>
+
+        <h2>🍪 2. How We Use Cookies</h2>
+        <p>At Xtra Flavor Recipes, we use cookies to:</p>
+        <ul>
+            <li>✔ Ensure the website works properly (essential functionality, security, and load balancing).</li>
+            <li>✔ Remember your preferences, such as language selection, dark/light mode, or saved recipe filters.</li>
+            <li>✔ Understand how visitors explore our content — which recipes are most loved, and how we can improve navigation.</li>
+            <li>✔ Deliver relevant recommendations (no behavioral ads from third parties without consent).</li>
+            <li>✔ Analyze aggregated site traffic and performance using privacy-friendly analytics tools.</li>
+        </ul>
+        <p>We <strong>do not</strong> use cookies to collect sensitive personal data, and we never sell cookie-derived information to advertisers.</p>
+
+        <h2>📋 3. Types of Cookies We Use</h2>
+        <p>The table below details the specific cookie categories and examples you may encounter on our Site.</p>
+        <table class="cookie-table">
+            <thead>
+                <tr><th>Cookie Category</th><th>Purpose</th><th>Duration</th><th>Examples</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Strictly Necessary</strong></td><td>Essential for site navigation, login sessions (if any), security, and form submissions. Cannot be disabled.</td><td>Session / up to 1 year</td><td>session_id, csrf_token, load_balancer</td></tr>
+                <tr><td><strong>Preference (Functional)</strong></td><td>Remember your settings like recipe card style, preferred units (metric/imperial), and dismissed popups.</td><td>6 months</td><td>user_pref_units, recipe_view_mode, cookie_consent_status</td></tr>
+                <tr><td><strong>Analytics/Performance</strong></td><td>Collect anonymized data about page visits, popular recipes, and click behavior to improve content.</td><td>14 months (Google Analytics _ga)</td><td>_ga, _gid, _gat, fathom_id</td></tr>
+                <tr><td><strong>Third-Party (limited)</strong></td><td>Used for embedded content (e.g., YouTube recipe videos) and social sharing buttons. These services may set their own cookies.</td><td>Varies by provider</td><td>Youtube, Vimeo, AddThis</td></tr>
+            </tbody>
+        </table>
+        <p>We are currently evaluating cookieless analytics alternatives. You have control over non-essential cookies via the preference tool below.</p>
+
+        <h2>⚙️ 4. Your Consent & Control Options</h2>
+        <p>When you first visit Xtra Flavor Recipes, we display a cookie banner allowing you to accept, reject non-essential cookies, or customize your preferences. You can change your mind at any time.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin: 1rem 0 1.2rem;">
+            <button id="openPreferencesBtn" class="manage-btn">🍪 Manage Cookie Preferences</button>
+            <button id="acceptAllCookies" class="manage-btn" style="background: #b5773c;">✅ Accept All</button>
+            <button id="rejectNonEssential" class="manage-btn" style="background: #6b4c2c;">❌ Reject Non-Essential</button>
+        </div>
+        <p>You can also block or delete cookies through your browser settings. Below are links to manage cookies in popular browsers:</p>
+        <ul>
+            <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+            <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+            <li><a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+            <li><a href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener">Microsoft Edge</a></li>
+        </ul>
+        <p>Disabling certain cookies may affect website functionality — for example, recipe filters or saved preferences might not persist. Essential cookies will remain active to ensure security and core operations.</p>
+
+        <div id="consentPreferencesPanel" class="consent-panel" style="display: none;">
+            <h3 style="margin-top: 0; color:#ffdba5;">🔧 Customize cookie settings</h3>
+            <p>Select which cookie categories you authorize (essential are always active).</p>
+            <label style="display: block; margin: 12px 0;">
+                <input type="checkbox" id="prefCookiesCheckbox" checked> <strong>Preference/Functional cookies</strong> – remember your settings (e.g., unit system, layout)
+            </label>
+            <label style="display: block; margin: 12px 0;">
+                <input type="checkbox" id="analyticsCookiesCheckbox" checked> <strong>Analytics cookies</strong> – helps us improve the site with anonymous usage data
+            </label>
+            <label style="display: block; margin: 12px 0;">
+                <input type="checkbox" id="thirdpartyCookiesCheckbox"> <strong>Third-party cookies (embeds)</strong> – YouTube videos and social features (disabled by default)
+            </label>
+            <button id="savePreferencesBtn" class="manage-btn" style="margin-top: 10px;">💾 Save my preferences</button>
+            <p style="font-size: 0.85rem; margin-top: 15px;">Changes will apply immediately for future visits. Essential cookies cannot be disabled.</p>
+        </div>
+
+        <h2>📊 5. Analytics & Performance Tracking</h2>
+        <p>We use Google Analytics (with anonymized IP addresses enabled) to understand how users interact with our recipes and pages. Data is aggregated and never tied to your identity. You can opt out of Google Analytics tracking entirely by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>. We also respect “Do Not Track” signals where possible.</p>
+
+        <h2>🔗 6. Third-Party Cookies & Embedded Content</h2>
+        <p>Some pages feature embedded videos from YouTube or Vimeo, or social media share buttons. These third-party services may place cookies on your device. We do not control those cookies, but we limit the usage of such content and provide clear notice. Please review the privacy policies of those third parties: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google/YouTube</a>, <a href="https://vimeo.com/privacy" target="_blank" rel="noopener">Vimeo</a>. By default, we block third-party cookies until you interact with the embedded player or give consent via the preference tool.</p>
+
+        <h2>🔄 7. Changes to This Cookie Policy</h2>
+        <p>We may update this Cookie Policy occasionally to reflect changes in technology, regulation, or our practices. The “Effective Date” at the top indicates the latest revision. Any material changes will be communicated through a website notice or email newsletter. We encourage you to review this page periodically.</p>
+
+        <h2>📞 8. Contact & Questions</h2>
+        <p>If you have any questions about our use of cookies or your privacy, please contact us at:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:privacy@xtraflavorrecipes.com">privacy@xtraflavorrecipes.com</a> (Cookie & Privacy Team)</li>
+            <li><strong>Mail:</strong> Xtra Flavor Recipes — Privacy Office, 142 Brownstone Lane, Culinary District, Suite 3B, Asheville, NC 28801, United States</li>
+            <li><strong>Phone:</strong> <a href="tel:+18285551234">+1 (828) 555-1234</a></li>
+        </ul>
+        <p>We value your trust as much as a slow-roasted garlic bulb. Thank you for being part of our flavorful community.</p>
+
+        <hr>
+        <div style="background: #2c1f12; border-radius: 36px; padding: 1.2rem; margin-top: 1rem;">
+            <p style="margin-bottom: 0; font-style: italic; display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center;">
+                <span>🍪 <strong>Cookie transparency note:</strong> We never use fingerprinting or cross-site tracking for advertising.</span>
+                <span>🌿 Your choices matter — customize anytime.</span>
+            </p>
+        </div>
+        <p style="margin-top: 1.8rem; font-size: 0.85rem; text-align: center;">For details on how we handle personal data beyond cookies, please see our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+    </div>
+    
+    <!-- subtle consent reminder that matches the brand -->
+    <div style="margin-top: 2rem; background: #332415; border-radius: 50px; padding: 0.8rem 1.5rem; text-align: center; font-size: 0.85rem;">
+        <span>🍂 By using Xtra Flavor Recipes, you agree to our use of essential cookies and consent to optional cookies based on your preferences. Manage via the panel above or browser settings.</span>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="address">
+        📍 <strong>Xtra Flavor Headquarters</strong><br>
+        142 Brownstone Lane, Culinary District, Suite 3B,<br>
+        Asheville, NC 28801, United States
+    </div>
+    <div class="contact">
+        📞 <strong>Reservations & Support:</strong> <a href="tel:+18285551234">+1 (828) 555-1234</a><br>
+        ✉️ <a href="mailto:hello@xtraflavorrecipes.com">hello@xtraflavorrecipes.com</a> | <a href="mailto:privacy@xtraflavorrecipes.com">privacy@xtraflavorrecipes.com</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.85rem;">
+        © 2026 Xtra Flavor Recipes — Earthy recipes, honest cookies. Your privacy is our signature ingredient.
+    </div>
+</footer>
+
+<script>
+    (function() {
+        // Helper: simulate storing consent preferences in localStorage (just for demo UI consistency)
+        // For full implementation, server-side would handle actual cookie setting. This UI educates and sets user preference flags.
+        const STORAGE_KEY = 'xtraflavor_cookie_prefs';
+
+        function loadPreferences() {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (saved) {
+                try {
+                    const prefs = JSON.parse(saved);
+                    document.getElementById('prefCookiesCheckbox').checked = prefs.preferences !== false;
+                    document.getElementById('analyticsCookiesCheckbox').checked = prefs.analytics !== false;
+                    document.getElementById('thirdpartyCookiesCheckbox').checked = prefs.thirdparty === true;
+                } catch(e) {}
+            } else {
+                // default: functional and analytics on, thirdparty off
+                document.getElementById('prefCookiesCheckbox').checked = true;
+                document.getElementById('analyticsCookiesCheckbox').checked = true;
+                document.getElementById('thirdpartyCookiesCheckbox').checked = false;
+            }
+        }
+
+        function savePreferencesToStorage(prefVal, analyticsVal, thirdpartyVal) {
+            const prefs = {
+                preferences: prefVal,
+                analytics: analyticsVal,
+                thirdparty: thirdpartyVal
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs));
+            // Simulate cookie consent update (in real scenario, you'd set/remove cookies)
+            console.log(`🍪 XtraFlavor: preferences saved → functional: ${prefVal}, analytics: ${analyticsVal}, thirdparty: ${thirdpartyVal}`);
+            // Show a friendly alert/notification (non-intrusive)
+            const msgDiv = document.createElement('div');
+            msgDiv.innerText = '✅ Cookie preferences saved! Your choices will apply on your next visit.';
+            msgDiv.style.position = 'fixed';
+            msgDiv.style.bottom = '20px';
+            msgDiv.style.right = '20px';
+            msgDiv.style.backgroundColor = '#4a3522';
+            msgDiv.style.color = '#f9e7c2';
+            msgDiv.style.padding = '10px 18px';
+            msgDiv.style.borderRadius = '50px';
+            msgDiv.style.borderLeft = '5px solid #e2a14f';
+            msgDiv.style.fontSize = '0.85rem';
+            msgDiv.style.zIndex = '9999';
+            msgDiv.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+            document.body.appendChild(msgDiv);
+            setTimeout(() => { msgDiv.remove(); }, 3000);
+        }
+
+        function setConsentFromCheckboxes() {
+            const prefChecked = document.getElementById('prefCookiesCheckbox').checked;
+            const analyticsChecked = document.getElementById('analyticsCookiesCheckbox').checked;
+            const thirdChecked = document.getElementById('thirdpartyCookiesCheckbox').checked;
+            savePreferencesToStorage(prefChecked, analyticsChecked, thirdChecked);
+        }
+
+        // UI panel toggle
+        const panel = document.getElementById('consentPreferencesPanel');
+        const openBtn = document.getElementById('openPreferencesBtn');
+        const acceptAllBtn = document.getElementById('acceptAllCookies');
+        const rejectNonEssentialBtn = document.getElementById('rejectNonEssential');
+        const savePrefBtn = document.getElementById('savePreferencesBtn');
+
+        if (openBtn) {
+            openBtn.addEventListener('click', () => {
+                if (panel.style.display === 'none' || panel.style.display === '') {
+                    panel.style.display = 'block';
+                    loadPreferences(); // reload current preferences into checkboxes
+                } else {
+                    panel.style.display = 'none';
+                }
+            });
+        }
+
+        if (acceptAllBtn) {
+            acceptAllBtn.addEventListener('click', () => {
+                // Accept all cookies: set preferences true for functional, analytics, thirdparty
+                document.getElementById('prefCookiesCheckbox').checked = true;
+                document.getElementById('analyticsCookiesCheckbox').checked = true;
+                document.getElementById('thirdpartyCookiesCheckbox').checked = true;
+                setConsentFromCheckboxes();
+                if (panel.style.display === 'block') panel.style.display = 'none';
+            });
+        }
+
+        if (rejectNonEssentialBtn) {
+            rejectNonEssentialBtn.addEventListener('click', () => {
+                // Keep only essential = functional off? but functional is non-essential in classification? We set functional false, analytics false, thirdparty false.
+                document.getElementById('prefCookiesCheckbox').checked = false;
+                document.getElementById('analyticsCookiesCheckbox').checked = false;
+                document.getElementById('thirdpartyCookiesCheckbox').checked = false;
+                setConsentFromCheckboxes();
+                if (panel.style.display === 'block') panel.style.display = 'none';
+            });
+        }
+
+        if (savePrefBtn) {
+            savePrefBtn.addEventListener('click', () => {
+                setConsentFromCheckboxes();
+                panel.style.display = 'none';
+            });
+        }
+
+        // Initialize: load saved preferences on page load, also console log policy reminder.
+        loadPreferences();
+        console.log("🍪 Xtra Flavor Recipes — Cookie Policy loaded: transparent tracking controls ready.");
+
+        // For external links safety
+        const allLinks = document.querySelectorAll('a[href^="http"]');
+        allLinks.forEach(link => {
+            if (!link.hostname.includes(window.location.hostname) && !link.getAttribute('target')) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
+
+        // Add minor interactive effect for badges
+        const badges = document.querySelectorAll('.badge');
+        if(badges.length) {
+            badges.forEach(b => {
+                b.addEventListener('mouseenter', (e) => {
+                    e.target.style.opacity = '0.9';
+                    e.target.style.transform = 'scale(1.02)';
+                });
+                b.addEventListener('mouseleave', (e) => {
+                    e.target.style.opacity = '1';
+                    e.target.style.transform = 'scale(1)';
+                });
+            });
+        }
+    })();
+</script>
+</body>
+</html>

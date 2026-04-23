@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Privacy Policy | Xtra Flavor Recipes</title>
+    <meta name="description" content="Privacy Policy for Xtra Flavor Recipes. Learn how we collect, use, and protect your personal data while you explore our earthy culinary world.">
+    <meta name="robots" content="index, follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #2c1a0e; /* deep brown foundation */
+            font-family: 'Segoe UI', 'Merriweather', Georgia, 'Times New Roman', serif;
+            color: #f7f2e0;
+            line-height: 1.55;
+        }
+
+        :root {
+            --deep-bark: #3b2a1f;
+            --warm-clay: #8b5a2b;
+            --caramel: #c97e3a;
+            --cream: #f9e7c2;
+            --espresso: #2c1a0e;
+            --hazelnut: #a5693a;
+        }
+
+        /* header & navigation - consistent with main site */
+        .header {
+            background: linear-gradient(135deg, #2a1c0f, #4a2e1a);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid #d6a15a;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        }
+
+        .header h1 {
+            font-size: 2.7rem;
+            letter-spacing: 2px;
+            color: #ffdd99;
+            text-shadow: 3px 3px 0 #5a3a22;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #eeddbb;
+            margin-top: 0.5rem;
+        }
+
+        .nav-bar {
+            background: #5d3a1e;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0.8rem 2rem;
+            border-bottom: 2px solid #cb9e6b;
+        }
+
+        .nav-bar a {
+            color: #fff0cf;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            padding: 0.3rem 0.6rem;
+            border-radius: 30px;
+        }
+
+        .nav-bar a:hover {
+            background: #f3bc6c;
+            color: #2c1a0e;
+            transform: scale(1.02);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 2.5rem auto;
+            padding: 0 1.8rem;
+        }
+
+        /* privacy card style */
+        .privacy-card {
+            background: #3f2c1b;
+            border-radius: 48px;
+            padding: 2.2rem 2.5rem;
+            border: 1px solid #b87c44;
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.5);
+            transition: all 0.2s;
+        }
+
+        .privacy-card h2 {
+            color: #ffdba5;
+            font-size: 2rem;
+            border-left: 6px solid #e2a14f;
+            padding-left: 1.2rem;
+            margin: 1.2rem 0 1rem 0;
+        }
+
+        .privacy-card h3 {
+            color: #f5cf97;
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.8rem 0;
+            font-weight: 600;
+        }
+
+        .privacy-card p {
+            margin-bottom: 1rem;
+            color: #f2e5d2;
+        }
+
+        .privacy-card ul, .privacy-card ol {
+            margin: 0.8rem 0 1.2rem 2rem;
+            color: #f2e5d2;
+        }
+
+        .privacy-card li {
+            margin: 0.5rem 0;
+        }
+
+        .privacy-card a {
+            color: #fbcb7b;
+            text-decoration: none;
+            border-bottom: 1px dotted #d69b4a;
+        }
+
+        .privacy-card a:hover {
+            color: #ffeaac;
+            border-bottom-color: #ffcf8a;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background: #c2823a;
+            padding: 0.3rem 1rem;
+            border-radius: 60px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #2c1a0e;
+            letter-spacing: 0.3px;
+        }
+
+        .effective-date {
+            background: #2c1f12;
+            padding: 0.7rem 1.2rem;
+            border-radius: 60px;
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            font-size: 0.9rem;
+            color: #efdba8;
+        }
+
+        .highlight {
+            background: #4f351f;
+            padding: 0.2rem 0.4rem;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .footer {
+            background: #1f1308;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-top: 4px solid #b2722a;
+            margin-top: 3rem;
+            color: #e6d5b8;
+        }
+
+        .footer .address, .footer .contact {
+            margin: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        .footer a {
+            color: #fbcb7b;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border-color: #b5773c;
+            margin: 1.8rem 0;
+        }
+
+        @media (max-width: 700px) {
+            .header h1 { font-size: 1.9rem; }
+            .privacy-card { padding: 1.5rem; }
+            .privacy-card h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>🌾 Xtra Flavor Recipes 🌿</h1>
+    <p>Your privacy matters — just like the perfect caramelization.</p>
+</header>
+
+<nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms Of Privacy</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="cookies.html">Cookies Policy</a>
+</nav>
+
+<div class="container">
+    <div class="privacy-card">
+        <div class="badge-row">
+            <span class="badge">🔒 GDPR Ready</span>
+            <span class="badge">🍪 Cookie conscious</span>
+            <span class="badge">📧 Data minimalism</span>
+            <span class="badge">🌎 Global compliance</span>
+        </div>
+        <div class="effective-date">
+            📅 Effective Date: April 22, 2026 | Last Updated: April 22, 2026
+        </div>
+        <h1 style="color: #ffdd99; font-size: 2.4rem; margin-bottom: 0.5rem;">Privacy Policy</h1>
+        <p style="font-size: 1.05rem; margin-bottom: 1.8rem;">At <strong>Xtra Flavor Recipes</strong> (“we”, “us”, “our”), we respect your privacy and are committed to protecting any personal information you share with us. This policy explains how we collect, use, disclose, and safeguard your data when you visit our website <strong>xtraflavorrecipes.com</strong> (the “Site”). By engaging with our earthy culinary community, you trust us with your information — and we take that seriously.</p>
+        
+        <h2>📌 1. Information We Collect</h2>
+        <p>We collect information that you voluntarily provide to us when you interact with the Site, subscribe to newsletters, submit recipe ideas, or contact our team. This may include:</p>
+        <ul>
+            <li><span class="highlight">Personal Identifiers:</span> Name, email address, phone number (optional) when you fill out contact forms or sign up for events.</li>
+            <li><span class="highlight">Correspondence Data:</span> Messages, recipe feedback, culinary questions, and any attachments you share.</li>
+            <li><span class="highlight">Automated Information:</span> Through cookies and similar technologies, we may collect usage data like IP address, browser type, referring pages, and site navigation patterns. This helps us enhance your flavor exploration journey.</li>
+            <li><span class="highlight">Newsletter & Event Registration:</span> If you opt-in, we store your email and preferences to send updates about brown-butter workshops, new recipes, and seasonal promotions.</li>
+        </ul>
+
+        <h2>🍪 2. Cookies & Tracking Technologies</h2>
+        <p>We use first-party and third-party cookies to improve functionality, analyze traffic, and personalize content. Cookies help remember your preferences (like dark/light mode, language) and understand which recipes are most loved. You can manage cookie preferences through your browser settings. For more details, please review our <a href="cookies.html">Cookies Policy</a>. Essential cookies cannot be disabled as they keep the site secure.</p>
+        
+        <h2>🔥 3. How We Use Your Information</h2>
+        <p>Your data helps us serve you better — like a slow-simmered stock. We use collected information to:</p>
+        <ul>
+            <li>✔ Respond to your inquiries, comments, or recipe requests.</li>
+            <li>✔ Send occasional newsletters and marketing communications (only if you’ve given explicit consent).</li>
+            <li>✔ Improve website content, user experience, and troubleshoot technical issues.</li>
+            <li>✔ Host contests, polls, or culinary events and notify winners.</li>
+            <li>✔ Detect, prevent, and address fraudulent or unauthorized activity.</li>
+        </ul>
+        <p>We never sell your personal data to third parties. Your trust is our core ingredient.</p>
+
+        <h2>🤝 4. Sharing & Disclosure</h2>
+        <p>We may share your information only in the following limited scenarios:</p>
+        <ul>
+            <li><strong>Service Providers:</strong> Trusted partners who assist with email delivery, analytics (e.g., Google Analytics), and form processing. They are bound by confidentiality and data protection agreements.</li>
+            <li><strong>Legal Compliance:</strong> If required by law, court order, or governmental regulation to protect our rights or the safety of our community.</li>
+            <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or asset sale, your data may be transferred, with notice provided.</li>
+        </ul>
+        <p>We do not share, trade, or rent your personal information for marketing purposes without your express approval.</p>
+
+        <h2>🌰 5. Data Security & Retention</h2>
+        <p>We implement industry-standard security measures — encryption, firewalls, and secure server environments — to protect your data. However, no internet transmission is 100% secure. We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy or as required by law (e.g., for tax/legal obligations). Contact form submissions are generally retained for 24 months to ensure we can address follow-up questions before anonymizing or deleting.</p>
+
+        <h2>✍️ 6. Your Privacy Rights</h2>
+        <p>Depending on your location (e.g., GDPR for EU residents, CCPA for California), you may have the following rights:</p>
+        <ul>
+            <li>🔹 <strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+            <li>🔹 <strong>Rectification:</strong> Correct inaccurate or incomplete information.</li>
+            <li>🔹 <strong>Erasure (“Right to be forgotten”):</strong> Request deletion of your personal data, subject to legal limitations.</li>
+            <li>🔹 <strong>Restrict Processing:</strong> Ask us to limit how we use your data.</li>
+            <li>🔹 <strong>Data Portability:</strong> Receive your data in a structured, machine-readable format.</li>
+            <li>🔹 <strong>Opt-out of Marketing:</strong> Unsubscribe from newsletters at any time using the “unsubscribe” link in emails.</li>
+        </ul>
+        <p>To exercise any of these rights, please contact our Privacy Coordinator at <a href="mailto:privacy@xtraflavorrecipes.com">privacy@xtraflavorrecipes.com</a> or via mail (address below). We will respond within 30 days.</p>
+
+        <h2>👶 7. Children’s Privacy</h2>
+        <p>Our Site is intended for general audiences and does not knowingly collect personal information from children under 13 years of age (or under 16 in certain jurisdictions). If we learn that we have inadvertently gathered data from a child without parental consent, we will delete it promptly. Parents/guardians may contact us if they believe their child has provided personal information.</p>
+
+        <h2>📢 8. Third-Party Links</h2>
+        <p>Our recipe pages or blog posts may include links to external websites (e.g., ingredient suppliers, kitchen tools). We are not responsible for the privacy practices or content of those third-party sites. We encourage you to read their privacy policies before providing any personal information.</p>
+
+        <h2>🔄 9. Changes to This Privacy Policy</h2>
+        <p>We may update this policy occasionally to reflect changes in our practices or legal requirements. The “Effective Date” at the top indicates the latest revision. Significant changes will be communicated via a notice on our homepage or email (if you have subscribed). Your continued use of the Site after modifications constitutes acceptance of the revised policy.</p>
+
+        <h2>📞 10. Contact Us</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data handling, please reach out:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:privacy@xtraflavorrecipes.com">privacy@xtraflavorrecipes.com</a> (preferred for data rights requests)</li>
+            <li><strong>General Inquiries:</strong> <a href="mailto:hello@xtraflavorrecipes.com">hello@xtraflavorrecipes.com</a></li>
+            <li><strong>Mail:</strong> Xtra Flavor Recipes — Privacy Office, 142 Brownstone Lane, Culinary District, Suite 3B, Asheville, NC 28801, United States</li>
+            <li><strong>Phone (Support):</strong> <a href="tel:+18285551234">+1 (828) 555-1234</a> (Mon–Fri, 9am–5pm EST)</li>
+        </ul>
+        <p>We promise to treat every privacy request with the same warmth and care as our signature spiced hot chocolate.</p>
+
+        <hr>
+        <div style="background: #2c1f12; border-radius: 36px; padding: 1.2rem; margin-top: 1rem;">
+            <p style="margin-bottom: 0; font-style: italic; display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center;">
+                <span>🍂 <strong>Commitment to transparency:</strong> We do not use deceptive design patterns or dark patterns.</span>
+                <span>🌱 Your data belongs to you — always.</span>
+            </p>
+        </div>
+        <p style="margin-top: 1.8rem; font-size: 0.85rem; text-align: center;">For information about our use of cookies and similar technologies, please read our <a href="cookies.html">Cookies Policy</a>. For website terms of use, see <a href="terms.html">Terms of Service</a>.</p>
+    </div>
+    
+    <!-- small interactive consent reminder simulation (purely stylistic) -->
+    <div style="margin-top: 2rem; background: #332415; border-radius: 50px; padding: 0.8rem 1.5rem; text-align: center; font-size: 0.85rem;">
+        <span>🍪 We use cookies to enhance your browsing experience and analyze site traffic. By continuing to use Xtra Flavor Recipes, you consent to our <a href="cookies.html" style="color:#fbcb7b;">Cookie Policy</a> and <a href="privacy.html" style="color:#fbcb7b;">Privacy Policy</a>. Manage preferences in your browser settings.</span>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="address">
+        📍 <strong>Xtra Flavor Headquarters</strong><br>
+        142 Brownstone Lane, Culinary District, Suite 3B,<br>
+        Asheville, NC 28801, United States
+    </div>
+    <div class="contact">
+        📞 <strong>Reservations & Support:</strong> <a href="tel:+18285551234">+1 (828) 555-1234</a><br>
+        ✉️ <a href="mailto:hello@xtraflavorrecipes.com">hello@xtraflavorrecipes.com</a> | <a href="mailto:privacy@xtraflavorrecipes.com">privacy@xtraflavorrecipes.com</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.85rem;">
+        © 2026 Xtra Flavor Recipes — All content, recipes, and photography are uniquely crafted. Brown theme forever. Your privacy is our priority.
+    </div>
+</footer>
+
+<!-- simple script to add console respect note and minor interactive update for privacy awareness -->
+<script>
+    (function() {
+        // just a friendly console reminder about privacy 
+        console.log("🍂 Xtra Flavor Recipes | Privacy Policy loaded. We respect your data & rights.");
+        // Add a subtle dynamic to the privacy card - indicates respect for user privacy
+        const privacyCard = document.querySelector('.privacy-card');
+        if(privacyCard) {
+            // Optional decorative effect: just to emphasize seriousness but no functional tracking
+            const badges = document.querySelectorAll('.badge');
+            if(badges.length) {
+                badges.forEach(b => {
+                    b.addEventListener('mouseenter', (e) => {
+                        e.target.style.opacity = '0.9';
+                        e.target.style.transform = 'scale(1.02)';
+                    });
+                    b.addEventListener('mouseleave', (e) => {
+                        e.target.style.opacity = '1';
+                        e.target.style.transform = 'scale(1)';
+                    });
+                });
+            }
+        }
+        // ensure external links get safe handling (optional)
+        const allLinks = document.querySelectorAll('a[href^="http"]');
+        allLinks.forEach(link => {
+            if (!link.hostname.includes(window.location.hostname) && !link.getAttribute('target')) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
+    })();
+</script>
+</body>
+</html>

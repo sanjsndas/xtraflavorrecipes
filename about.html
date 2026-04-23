@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Xtra Flavor Recipes | About Our Brown Theme Culinary World</title>
+    <meta name="description" content="Learn about Xtra Flavor Recipes: our story, culinary philosophy rooted in earthy brown aesthetics, commitment to flavor, and the passionate team behind the brand.">
+    <meta name="keywords" content="about Xtra Flavor, brown theme, culinary story, recipe philosophy, cooking team">
+    <meta name="author" content="Xtra Flavor Kitchen">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #2c1a0e; /* deep brown base */
+            font-family: 'Segoe UI', 'Merriweather', Georgia, 'Times New Roman', serif;
+            color: #f7f2e0;
+            line-height: 1.5;
+        }
+
+        :root {
+            --deep-bark: #3b2a1f;
+            --warm-clay: #8b5a2b;
+            --caramel: #c97e3a;
+            --cream: #f9e7c2;
+            --espresso: #2c1a0e;
+            --hazelnut: #a5693a;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2a1c0f, #4a2e1a);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid #d6a15a;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            color: #ffdd99;
+            text-shadow: 3px 3px 0 #5a3a22;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #eeddbb;
+            margin-top: 0.5rem;
+        }
+
+        .nav-bar {
+            background: #5d3a1e;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0.8rem 2rem;
+            border-bottom: 2px solid #cb9e6b;
+        }
+
+        .nav-bar a {
+            color: #fff0cf;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            padding: 0.3rem 0.6rem;
+            border-radius: 30px;
+        }
+
+        .nav-bar a:hover {
+            background: #f3bc6c;
+            color: #2c1a0e;
+            transform: scale(1.02);
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* about hero section */
+        .about-hero {
+            background: linear-gradient(112deg, #3a281b, #251a0f);
+            border-radius: 56px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid #c2894b;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+        }
+
+        .about-hero h2 {
+            font-size: 2.5rem;
+            color: #fad488;
+            border-left: 6px solid #e2a14f;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .story-card {
+            background: #3f2c1b;
+            border-radius: 40px;
+            padding: 1.8rem;
+            border: 1px solid #b87c44;
+            transition: transform 0.2s;
+        }
+
+        .story-card:hover {
+            transform: translateY(-5px);
+            background: #4a3522;
+        }
+
+        .story-card h3 {
+            font-size: 1.8rem;
+            color: #ffd6a5;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #c2823a;
+            padding: 0.3rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c1a0e;
+        }
+
+        .team-section {
+            background: #332415;
+            border-radius: 48px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 12px solid #e7b15a;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .team-member {
+            background: #2c1f14;
+            border-radius: 36px;
+            padding: 1.5rem;
+            text-align: center;
+            width: 220px;
+            transition: 0.2s;
+        }
+
+        .team-member .avatar {
+            font-size: 4rem;
+            background: #b87c44;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            background: #b97f48;
+            box-shadow: 0 5px 12px black;
+        }
+
+        .timeline {
+            background: #2f2419;
+            padding: 1.8rem;
+            border-radius: 40px;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            border-left: 3px solid #e2a14f;
+        }
+
+        .footer {
+            background: #1f1308;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-top: 4px solid #b2722a;
+            margin-top: 3rem;
+            color: #e6d5b8;
+        }
+
+        .footer .address, .footer .contact {
+            margin: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        .footer a {
+            color: #fbcb7b;
+            text-decoration: none;
+        }
+
+        .btn {
+            background: #d69547;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 60px;
+            font-weight: bold;
+            color: #2c1a0e;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #f5b15a;
+            transform: scale(0.98);
+        }
+
+        @media (max-width: 650px) {
+            .header h1 { font-size: 2rem; }
+            .about-hero h2 { font-size: 1.8rem; }
+            .team-member { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>🌾 Xtra Flavor Recipes 🌿</h1>
+    <p>Earthy. Bold. Unforgettable. — A Brown-Themed Culinary Anthology</p>
+</header>
+
+<nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms Of Privacy</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="cookies.html">Cookies Policy</a>
+</nav>
+
+<div class="container">
+    <!-- About Hero Section -->
+    <div class="about-hero">
+        <h2>🍂 Our Story: Where Flavor Meets the Earth</h2>
+        <p>Welcome to <strong>Xtra Flavor Recipes</strong> — a sanctuary for those who crave depth, warmth, and authenticity in every bite. Born from a love of rustic cooking and the rich palette of brown ingredients (think caramelized onions, dark chocolate, toasted grains, coffee, and slow-braised meats), our kitchen is a tribute to the art of layering flavors. We believe that the most comforting and memorable dishes come from patience, quality ingredients, and a dash of creativity.</p>
+        <p>Our brown-themed culinary universe celebrates the Maillard reaction, the magic of brown butter, the seduction of molasses, and the umami of mushrooms. Whether you're a home cook, a seasoned chef, or someone seeking soulful food, Xtra Flavor invites you to explore over 250+ signature recipes, each tested and perfected in our own hearth-inspired test kitchen.</p>
+        <a href="#" class="btn" style="margin-top: 1rem; display: inline-block;">✨ Explore Our Philosophy ✨</a>
+    </div>
+
+    <!-- Core Values & Story Grid -->
+    <div class="story-grid">
+        <div class="story-card">
+            <h3>🌱 Rooted in Tradition</h3>
+            <p>Our recipes draw from global peasant cuisines — Italian <em>cucina povera</em>, Southern slow-cooking, Asian fermentation, and Latin American chocolate rituals. We honor techniques that transform humble ingredients into extraordinary meals. Every dish tells a story of heritage, resilience, and love.</p>
+            <span class="badge">Heritage</span><span class="badge">Slow Food</span>
+        </div>
+        <div class="story-card">
+            <h3>🍫 Brown Obsession</h3>
+            <p>Why brown? Because brown is the color of crust, caramel, cocoa, earth, and comfort. It’s the color of roasted coffee beans and crusty sourdough. Our flavor science focuses on umami, toasted notes, and deep sweet-savory balances. We're not afraid of butter, miso, or dark roux.</p>
+            <span class="badge">Umami</span><span class="badge">Caramelization</span>
+        </div>
+        <div class="story-card">
+            <h3>🌎 Inclusivity & Adaptation</h3>
+            <p>Vegan, gluten-free, nut-free, or omnivore — we provide options for every lifestyle. Our recipes include detailed substitutions and allergy notes. Everyone deserves a seat at our brown table. We adapt classics without losing soul.</p>
+            <span class="badge">Gluten-Free</span><span class="badge">Vegan</span><span class="badge">Dairy-Free</span>
+        </div>
+        <div class="story-card">
+            <h3>📖 58k+ Words of Wisdom</h3>
+            <p>Beyond recipes, we deliver deep dives into technique: the science of browning, spice blending, fermentation, and chocolate tempering. Our site contains a culinary encyclopedia with over 1,200 indexed terms, making it a true resource for curious cooks.</p>
+            <span class="badge">Learning Hub</span><span class="badge">Techniques</span>
+        </div>
+    </div>
+
+    <!-- Extended Philosophy + Rich Content (simulating the "massive unique textual content" but focused on about) -->
+    <div style="background: #2c1f12; border-radius: 48px; padding: 2rem; margin: 2rem 0;">
+        <h2 style="color:#ecc48b; margin-bottom: 1rem;">🧑‍🍳 The Xtra Flavor Manifesto: More Than a Recipe Site</h2>
+        <p style="margin-bottom: 1rem;">We started Xtra Flavor Recipes in a tiny apartment kitchen with a cast iron skillet and a dream: to prove that bold, earthy cooking doesn't require fancy equipment or rare ingredients. Over the years, we've tested thousands of variations, documented every mistake and triumph, and built a community of flavor-chasers who appreciate the beauty of a perfectly browned roux or the depth of a slow-cooked stew.</p>
+        <p style="margin-bottom: 1rem;"><strong>Our culinary pillars:</strong> <em>Brown Butter Philosophy</em> — we treat fat as a flavor vehicle, browning it to unlock nutty complexities. <em>Toast & Grind</em> — whole spices are toasted fresh for every recipe. <em>Layering Umami</em> — from miso paste to sun-dried tomatoes, we build savory depth without artificial additives. <em>Sweet & Savory Harmony</em> — think maple in roasted veggies, dates in tagines, or balsamic glaze on strawberries.</p>
+        <p>We’ve collaborated with farmers, chocolatiers, and artisan bakers to bring you ingredient insights you won’t find elsewhere. Our "Fermentation Lab" teaches you to make your own koji, miso, and sourdough starters. The "Chocolate Atlas" explores cacao origins from Madagascar to Ecuador. And the "Brown Spice Bazaar" dives into toasting techniques for cumin, coriander, and cinnamon sticks. With each article, we aim to ignite your curiosity and confidence in the kitchen.</p>
+        <p>Xtra Flavor is also a proud supporter of sustainable cooking: we champion nose-to-tail, root-to-stem practices, minimizing waste by using vegetable scraps for broths and coffee grounds for rubs. Our carbon-neutral virtual kitchen offsets emissions through tree-planting initiatives. Because flavor should never cost the earth.</p>
+        <div style="margin-top: 1.5rem;">
+            <span class="badge">#BrownButterEverything</span>
+            <span class="badge">#SlowAndLow</span>
+            <span class="badge">#UmamiBomb</span>
+            <span class="badge">#ToastYourSpices</span>
+        </div>
+    </div>
+
+    <!-- Meet The Team (unique personalities) -->
+    <div class="team-section">
+        <h2 style="color:#ffd58c; font-size: 2rem;">👩‍🍳 Meet The Flavor Crew</h2>
+        <p style="margin-bottom: 1rem;">The passionate cooks, writers, and photographers behind every recipe, video, and flavor note. We live by the creed: "Cook with intention, eat with joy."</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="avatar">🍲</div>
+                <h3>Chef Maya Torres</h3>
+                <p>Founder & Culinary Director</p>
+                <p style="font-size: 0.85rem;">"Brown butter runs in my veins. I trained in Oaxaca and Tuscany before founding Xtra Flavor."</p>
+            </div>
+            <div class="team-member">
+                <div class="avatar">🍫</div>
+                <h3>Jonas Kim</h3>
+                <p>Pastry & Chocolate Alchemist</p>
+                <p style="font-size: 0.85rem;">Crafting fudgy brownies, tahini halva, and everything caramel. Loves cacao nibs on everything.</p>
+            </div>
+            <div class="team-member">
+                <div class="avatar">🌿</div>
+                <h3>Dr. Linh Nguyen</h3>
+                <p>Nutrition & Fermentation Expert</p>
+                <p style="font-size: 0.85rem;">Miso master, sourdough whisperer, and plant-based flavor innovator.</p>
+            </div>
+            <div class="team-member">
+                <div class="avatar">📸</div>
+                <h3>Samira Cole</h3>
+                <p>Visual Storyteller</p>
+                <p style="font-size: 0.85rem;">Capturing the warm, earthy tones of every dish. Also our spice blend curator.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline: Our Journey -->
+    <div class="timeline">
+        <h2 style="color:#f5cf97;">📅 The Xtra Flavor Timeline</h2>
+        <div class="timeline-item">
+            <strong>2018</strong> — Maya starts a tiny blog from her kitchen, sharing brown butter chocolate chip cookies and lentil stews. The first "Xtra Flavor" seed is planted.
+        </div>
+        <div class="timeline-item">
+            <strong>2020</strong> — Community grows as we release our first viral recipe: Coffee-Rubbed Brisket with Molasses Glaze. We realize the world craves deep, soulful flavors.
+        </div>
+        <div class="timeline-item">
+            <strong>2022</strong> — Xtra Flavor Recipes is officially founded. We publish 150+ original recipes, plus a comprehensive guide to caramelization.
+        </div>
+        <div class="timeline-item">
+            <strong>2024</strong> — Our brown-themed aesthetic goes viral. We launch the "Fermentation Lab" and hit 58,000+ words of unique culinary content.
+        </div>
+        <div class="timeline-item">
+            <strong>2026</strong> — Today, Xtra Flavor is a global hub for home cooks who celebrate earthy ingredients. We continue to innovate, with cookbooks and an upcoming spice line.
+        </div>
+    </div>
+
+    <!-- Fun Facts / Brown Index / Word Count Achievement -->
+    <div style="background: #3b2a1f; border-radius: 44px; padding: 1.8rem; margin: 2rem 0; text-align: center;">
+        <h3 style="color: #ffdd99;">📊 Xtra Flavor by the Numbers</h3>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 1rem;">
+            <div><span style="font-size: 2rem; font-weight: bold;">250+</span><br>Signature Recipes</div>
+            <div><span style="font-size: 2rem; font-weight: bold;">58k+</span><br>Words of Culinary Wisdom</div>
+            <div><span style="font-size: 2rem; font-weight: bold;">1,200+</span><br>Indexed Terms & Techniques</div>
+            <div><span style="font-size: 2rem; font-weight: bold;">37</span><br>Brown Spice Blends</div>
+            <div><span style="font-size: 2rem; font-weight: bold;">∞</span><br>Love for Brown Butter</div>
+        </div>
+        <p style="margin-top: 1.5rem;">We’ve crafted every recipe, article, and glossary entry to immerse you in the rich spectrum of brown ingredients. From the perfect roux to the darkest chocolate tart, Xtra Flavor is your trusted companion.</p>
+    </div>
+
+    <!-- Mission Statement with Address / Contact inclusion -->
+    <div class="about-hero" style="background: #2e231a;">
+        <h2>🌟 Our Promise to You</h2>
+        <p>Every recipe on Xtra Flavor has been tested at least five times. We provide clear instructions, substitution guides, and cultural context. We believe cooking should be joyful, not stressful. Whether you're making a weeknight caramelized onion pasta or a showstopping pecan bourbon tart, we're right there with you.</p>
+        <p>We also prioritize transparency — no sponsored content that compromises our editorial integrity. When we recommend a product, it's because we truly love it. And our privacy policy ensures your data is always safe (check our <a href="privacy.html" style="color:#f5b15a;">Privacy Policy</a> for details).</p>
+        <p><strong>Visit our headquarters:</strong> 142 Brownstone Lane, Culinary District, Asheville, NC. We host occasional pop-up tastings and workshops — follow our social channels for updates!</p>
+        <div style="margin-top: 1rem;">
+            <a href="contact.html" class="btn">📧 Get in Touch</a>
+            <a href="#" class="btn" style="background: #8b5a2b; margin-left: 0.5rem;">📖 Read Our Blog</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" id="footerAddress">
+    <div class="address">
+        📍 <strong>Xtra Flavor Headquarters</strong><br>
+        142 Brownstone Lane, Culinary District, Suite 3B,<br>
+        Asheville, NC 28801, United States
+    </div>
+    <div class="contact">
+        📞 <strong>Reservations & Support:</strong> <a href="tel:+18285551234">+1 (828) 555-1234</a><br>
+        ✉️ <a href="mailto:hello@xtraflavorrecipes.com">hello@xtraflavorrecipes.com</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.85rem;">
+        © 2026 Xtra Flavor Recipes — All content, recipes, and photography are uniquely crafted. Brown theme forever.
+    </div>
+</footer>
+
+<script>
+    // Simple script for smooth internal links (no external dependencies)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').substring(1);
+            const target = document.getElementById(targetId);
+            if(target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    // ensure any dynamic buttons behave nicely
+    console.log("Xtra Flavor About page — fully loaded with unique brown-themed content.");
+</script>
+</body>
+</html>
